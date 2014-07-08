@@ -1,0 +1,268 @@
+/*Fonts library*/
+$icomoonPath:   "../fonts" !default;
+
+/*Fonts library*/
+@font-face {
+  font-family: 'icoparrot';
+  src:url('#{$icomoonPath}/icoparrot.eot?2323');
+  src:url('#{$icomoonPath}/icoparrot.eot?#iefix') format('embedded-opentype'),
+  url('#{$icomoonPath}/icoparrot.ttf?#2323') format('truetype'),
+  url('#{$icomoonPath}/icoparrot.woff?#2323') format('woff'),
+  url('#{$icomoonPath}/icoparrot.svg#icoparrot?#2323') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icoparrot';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  // Better Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Icon sticked in corner of a block element
+.sticked-icon{
+    display: block;
+    position: relative;
+    padding-left: rem-calc(40px);
+    font-family: inherit;
+
+    &[class^="icon-"]:before,
+    &[class*=" icon-"]:before{
+        position: absolute;
+        top: rem-calc(15px);
+        left: rem-calc(15px);
+        font-family: 'icoparrot';
+        //font-size: rem-calc(15px);
+    }
+}
+
+// Insert an icon as a class (without <i class="">)
+.button[class^="icon-"], .button[class*=" icon-"] {
+    font-family: inherit;
+
+    &:before{
+        font-family: 'icoparrot';
+        margin-right: rem-calc(5px);
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+  &.icoAft {
+
+    &:before{
+     position:reltive;
+      right:0.5rem;
+      width:2rem;
+    }
+
+
+  }
+
+}
+
+// Icon Sizes
+.icon-2x{
+    font-size: 2em;
+
+    &.sticked-icon{
+        font-size: inherit;
+        padding-left: 3.5em;
+
+        &[class^="icon-"]:before,
+        &[class*=" icon-"]:before{
+            position: absolute;
+            top: 0.5em;
+            left: 0.5em;
+            font-family: 'icoparrot';
+            font-size: 2em;
+        }
+    }
+}
+.icon-3x{
+    font-size: 3em;
+
+    &.sticked-icon{
+        font-size: inherit;
+        padding-left: 5.5em;
+
+        &[class^="icon-"]:before,
+        &[class*=" icon-"]:before{
+            position: absolute;
+            top: 0.5em;
+            left: 0.5em;
+            font-family: 'icoparrot';
+            font-size: 3em;
+        }
+    }
+}
+.icon-4x{
+    font-size: 4em;
+
+    &.sticked-icon{
+        font-size: inherit;
+        padding-left: 6.5em;
+
+        &[class^="icon-"]:before,
+        &[class*=" icon-"]:before{
+            position: absolute;
+            top: 0.5em;
+            left: 0.5em;
+            font-family: 'icoparrot';
+            font-size: 4em;
+        }
+    }
+}
+.icon-2x-solo {
+  padding-left:3rem;
+  padding-right:1rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+    &[class^="icon-"]:before,
+    &[class*=" icon-"]:before{
+      font-size: 2rem;
+      position: absolute;
+      top: 0.25em;
+      left: 0.25em;
+      font-family: 'icoparrot';
+  }
+  &.icoAft {
+
+    &[class^="icon-"]:before,
+    &[class*=" icon-"]:before{
+      top: 0.25em;
+      right: 0em;
+      left:auto;
+    }
+  }
+  &.button.go {
+
+    margin-left:1rem;
+    padding-right:3rem;
+    padding-left:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+
+  }
+
+}
+
+// Icon list
+
+
+.icon-share:before {
+  content: "\58";
+}
+.icon-add:before {
+  content: "\2b";
+}
+.icon-subtract:before {
+  content: "\2d";
+}
+.icon-spinner:before {
+  content: "\e600";
+}
+.icon-apple:before {
+  content: "\61";
+}
+.icon-android:before {
+  content: "\41";
+}
+.icon-windows:before {
+  content: "\57";
+}
+.icon-file-pdf:before {
+  content: "\66";
+}
+.icon-bigR:before {
+  content: "\52";
+}
+.icon-bigL:before {
+  content: "\4c";
+}
+.icon-download:before {
+  content: "\e601";
+}
+.icon-caddy:before {
+  content: "\42";
+}
+.icon-target:before {
+  content: "\74";
+}
+.icon-search-strong:before {
+  content: "\51";
+}
+.icon-store:before {
+  content: "\73";
+}
+.icon-estore:before {
+  content: "\65";
+}
+.icon-arrow-right:before {
+  content: "\3e";
+}
+.icon-facebook:before {
+  content: "\46";
+}
+.icon-googleplus:before {
+  content: "\47";
+}
+.icon-instagram:before {
+  content: "\49";
+}
+.icon-pinterest:before {
+  content: "\50";
+}
+.icon-search:before {
+  content: "\53";
+}
+.icon-twitter:before {
+  content: "\54";
+}
+.icon-youtube:before {
+  content: "\59";
+}
+.icon-arrow-down:before {
+  content: "\64";
+}
+.icon-arrow-left:before {
+  content: "\6c";
+}
+.icon-parrot_ico:before {
+  content: "\70";
+}
+.icon-arrow-up:before {
+  content: "\75";
+}
+.icon-volume-off:before {
+  content: "\76";
+}
+.icon-volume-up:before {
+  content: "\56";
+}
+.icon-picture:before {
+  content: "\e606";
+}
+.icon-play:before {
+  content: "\72";
+}
+.icon-pause:before {
+  content: "\7c";
+}
+.icon-shopping-cart:before {
+  content: "\e607";
+}

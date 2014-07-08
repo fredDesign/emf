@@ -1,0 +1,72 @@
+/* Base styles */
+.column {
+  float: left;
+  .item {
+    max-width:100%;
+    margin-bottom:1rem;
+  }
+
+  &.size-1of4 {
+    width: 23%;padding:1%;
+
+  }
+  &.size-1of3 {
+    width: 33.333%;padding:1%;
+  }
+  &.size-1of2 {
+    width: 50%;padding:1%;
+  }
+}
+
+.main-section {
+/* Configurate salvattore with media queries
+  @media #{$small-up} {
+  #timeline[data-columns]::before {
+    content: '1 .column';
+  }
+}
+
+  @media #{$medium-up} {
+  #timeline[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+
+  @media #{$large-up} {
+  #timeline[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+
+  @media #{$xlarge-up} {
+
+    #timeline[data-columns]::before {
+      content: '3 .column.size-1of3';
+    }
+  }
+
+@media screen and (min-width: 851px) {
+}
+
+
+*/
+}
+
+
+
+@media screen and (max-width: 680px){
+  #timeline[data-columns]::before {
+    content: '1 .column.size-1of1';
+  }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1520px) {
+  #timeline[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+@media screen and (min-width: 1521px) {
+  #timeline[data-columns]::before {
+    content: '3 .column.size-1of3';
+  }
+}
